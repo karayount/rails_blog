@@ -1,0 +1,14 @@
+<p>
+  <strong>Quote:</strong>
+  <%= @quote.content %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @quote.author %>
+</p>
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>
+<br>
+<%= link_to 'Home', controller: 'welcome' %>
